@@ -1,0 +1,110 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    max-width: 94%;
+    margin-top: 36px;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 48px;
+}
+
+header nav .nav-menu {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .nav-menu .menu a {
+    border-bottom: 0 solid transparent;
+    transition: border-bottom 250ms ease;
+}
+
+header nav .nav-menu .menu a:hover {
+    border-bottom: 1px solid var(--fg-1100);
+}
+
+header nav .nav-menu .menu {
+    display: flex;
+    gap: 24px;
+}
+
+header nav .nav-menu .action {
+    display: flex;
+    gap: 12px;
+}
+
+header nav .hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--fg-1000);
+    -webkit-transition: all 0.3 ease-out;
+    transition: all 0.3 ease-out;
+    z-index: 3;
+}
+
+
+@media (max-width: 768px) {
+    header nav .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    header nav {
+        justify-content: space-between;
+    }
+
+
+    header nav .nav-menu {
+        position: fixed;
+        right: -100%;
+        bottom: 0px;
+        top: 0px;
+
+        flex-direction: column;
+        justify-content: center;
+        gap: 64px;
+        font-size: 21px;
+        
+        background-color: rgb(232, 232, 232);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    header nav .nav-menu.active {
+        right: 0;
+    }
+
+    header nav .nav-menu .menu {
+        flex-direction: column;
+        gap: 24px;
+    }
+}

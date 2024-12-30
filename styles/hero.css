@@ -1,0 +1,86 @@
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    background: url('../assets/hero-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 64px;
+
+}
+
+#hero-section .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+    max-width: 94%;
+    margin: 0 auto;
+    gap: 48px;
+}
+
+.hero .title h2 {
+    color: var(--fg-1000);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    max-width: 36ch;
+}
+
+.hero .title p {
+    color: var(--fg-800);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+#hero-section .share-data {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+}
+
+#hero-section .share-data .data-item {
+    flex-grow: 1;
+    display: flex;
+    gap: 16px;
+    background-color: white;
+    border: 1px solid var(--fg-300);
+    border-radius: 8px;
+    padding: 16px 24px;
+    box-shadow: var(--shadow);
+}
+
+#hero-section .share-data .data-item .body {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero-section .share-data .data-item .body h5 {
+    color: var(--fg-1100);
+    font-weight: 600;
+}
+
+#hero-section .share-data .data-item .body .body-left p {
+    color: var(--fg-800);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#hero-section .share-data .data-item .body .body-right p {
+    color: #EA5959;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+#hero-section .share-data .data-item .body .body-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

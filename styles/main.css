@@ -1,0 +1,151 @@
+/* === Hero Section === */
+
+#hero-section .hero-image {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* === Card Section === */
+
+#card {
+    width: 1440px;
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+#card .card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    background-color: white;
+    border: 1px solid var(--fg-300);
+    box-shadow: var(--shadow-2);
+    border-radius: 12px;
+    padding: 32px 32px;
+}
+
+.card-item .icon {
+    display: flex;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    box-shadow: var(--shadow);
+}
+
+.card-item p,
+h3 {
+    text-align: center;
+}
+
+.card-item h3 {
+    color: var(--fg-1000);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.card-item p {
+    color: var(--fg-800);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+/* === FAQ === */
+
+#faq {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    margin-bottom: 96px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#faq h2 {
+    color: var(--fg-1000);
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.accordions {
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.accordion-item {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--fg-300);
+}
+
+.accordion-item .header {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-item .header .left-side {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.accordion-item .header .left-side h3 {
+    color: var(--fg-800);
+    font-weight: 700;
+}
+
+.accordion-item.open .header .left-side h3 {
+    color: var(--fg-1100);
+}
+
+.accordion-item .body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 300ms ease;
+}
+
+.accordion-item .body .content {
+    overflow: hidden;
+}
+
+.accordion-item.open .body {
+    grid-template-rows: 1fr;
+}
+
+.accordion-item .body .content p {
+    color: var(--fg-800);
+    font-weight: 500;
+    line-height: 1.5;
+    padding-left: 38px;
+    padding-top: 8px;
+}
+
+/* === Media Query === */
+
+@media (max-width: 1024px) {
+    #card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #card {
+        grid-template-columns: 1fr;
+    }
+}
+
+

@@ -1,0 +1,72 @@
+#plans {
+    margin: 0 auto;
+    width: 1440px;
+    max-width: 94%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.plan-item {
+    width: 380px;
+    background-color: var(--fg-1100);
+    padding: 32px;
+    border-radius: 12px;
+    color: var(--fg-100);
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#plans .plan-item:last-child {
+    background-image: url('../assets/card-bg.svg');
+}
+
+.plan-item .logo {
+    background-color: var(--fg-100);
+    border-radius: 24px;
+    box-shadow: 0 0 10px 0 var(--fg-100);
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan-item .plan-title h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.plan-item .plan-title p,
+.plan-item .price p {
+    color: var(--fg-700);
+    font-size: 14px;
+}
+
+.plan-item .price {
+    display: flex;
+    align-items: end;
+}
+
+.plan-item .price h2 {
+    font-weight: 800;
+    font-size: 72px;
+}
+
+.plan-item .features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.plan-item .features .feature-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 14px;
+}

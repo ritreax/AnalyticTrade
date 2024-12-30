@@ -1,0 +1,134 @@
+footer {
+    background-color: #121926;
+    background-image: url('../assets/footer.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer .container {
+    width: 1440px;
+    max-width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 64px 0;
+}
+
+footer .container .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact h5 {
+    color: var(--fg-100);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contact p {
+    color: var(--fg-400);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer .footer-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--fg-800);
+}
+
+.footer-body .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-body .footer-logo h2 {
+    color: var(--fg-100);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer-body .site-map {
+    display: flex;
+    gap: 24px;
+    color: var(--fg-100);
+    font-weight: 500;
+}
+
+.footer-body .input-button {
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+.footer-body .input-button input {
+    background-color: white;
+    border: 1px solid var(--fg-300);
+    border-radius: 4px;
+    padding: 12px 8px;
+    width: 100%;
+    
+}
+
+.footer-body .input-button button {
+    position: absolute;
+    right: 5px;
+    top: 10%;
+    bottom: 10%;
+}
+
+footer .bottom-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.bottom-body p {
+    color: var(--fg-500);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.bottom-body .right-side {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.bottom-body .right-side .social-media {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.bottom-body .right-side a {
+    color: #82B7FF;
+}
+
+
+@media(max-width: 1000px) {
+    footer .container .contact {
+        align-items: center;
+    }
+
+    footer .footer-body {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 48px;
+    }
+
+    footer .bottom-body {
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .bottom-body .right-side {
+        flex-direction: column;
+    }
+}

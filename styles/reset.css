@@ -1,0 +1,95 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+:root {
+    /* === Color Palet === */
+    --fg-100: #FCFCFC;
+    --fg-200: #F5F5F5;
+    --fg-300: #EFEFEF;
+    --fg-400: #E1E1E1;
+    --fg-500: #CCCCCC;
+    --fg-600: #B3B3B3;
+    --fg-700: #9E9E9E;
+    --fg-800: #959595;
+    --fg-900: #656565;
+    --fg-1000: #383838;
+    --fg-1100: #1D1D1D;
+    --fg-1200: #101010;
+    --fg-1300: #040404;
+
+    /* === BOX SHADOW === */
+
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --shadow-2: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: "Raleway", sans-serif;
+	display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button{
+    font-family: "Raleway", sans-serif;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
